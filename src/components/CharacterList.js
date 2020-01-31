@@ -19,14 +19,14 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 
-  return (
-    <section className="character-list">
-      <div>{char.map(c => {
-        return (
-          <div>char={c}</div>
-          <div>key={c.id}</div>
-        )
-      })}</div>
-    </section>
+  return (<></>
+    // <section className="character-list">
+    //   <div>{char.map(c => {
+    //     return (
+    //       <div>char={c}</div>
+    //       <div>key={c.id}</div>
+        
+    //   )}</div>
+    // </section>
   );
 }
