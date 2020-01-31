@@ -23,8 +23,8 @@ export default function CharacterList() {
     <section className="character-list">
       <div>{char.map(c => {
         return (
-          <div>char={char}</div>
-          <div>key={char.id}</div>
+          <div>char={c}</div>
+          <div>key={c.id}</div>
         )
       })}</div>
     </section>

@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: client-side routing utilizes javascript to map the routes of a website to the client's browser. The initial loadtime is longer, but after initial loadtime the pages load faster as they don't have to communicate to the server every time a user interacts with the page.
 
 ## Project Set Up
 
