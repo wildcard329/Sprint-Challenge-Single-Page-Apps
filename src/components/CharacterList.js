@@ -21,7 +21,12 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <div>{char.map(c => {
+        return (
+          <div>char={char}</div>
+          <div>key={char.id}</div>
+        )
+      })}</div>
     </section>
   );
 }
