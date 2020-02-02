@@ -4,13 +4,13 @@ import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
-  const [char, setChar] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('"https://rickandmortyapi.com/api/character/"')
+    axios.get('https://rickandmortyapi.com/api/character/')
         .then(response => {
           console.log('flag',response.data)
-          setChar(response.data)
+          setData(response.data.results)
         })
         .catch(error => {
           console.log('flag',error)
@@ -21,9 +21,11 @@ export default function CharacterList() {
   }, []);
   
   return (
-    <div className="App">
-      {char ? <CharacterCard character={char.results} /> : null}
-    </div>
+    <section className="character-list">
+      {data.map(char => (
+        <CharacterCard key={char} char={char} />
+      ))}
+    </section>
   )
   }
 
