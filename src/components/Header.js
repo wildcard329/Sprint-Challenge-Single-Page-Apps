@@ -9,7 +9,6 @@ export default function Header() {
       <div><Link to="/characters">characters</Link></div>
       <div><Link to="/search">search for character</Link></div>
       <div><Link to="/location">location</Link></div>
-      <div><Link to="/search">search for location</Link></div>
       <div><Link to="/episode">episodes</Link></div>
     </header>
   );
