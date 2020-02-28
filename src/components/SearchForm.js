@@ -7,7 +7,7 @@ export default function SearchForm() {
   const [query, setQuery] = useState("");
   useEffect(() => {
     axios
-      .get("https://rickandmortyapi.com/api/character/")
+      .get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
       .then(res => {
         const filtered = res.data.results.filter(item => {
           return item.name.toLowerCase().includes(query.toLowerCase());

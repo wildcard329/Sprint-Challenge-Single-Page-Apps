@@ -6,6 +6,7 @@ import WelcomePage from "./components/WelcomePage.js";
 import SearchForm from "./components/SearchForm";
 import LocationsList from "./components/LocationsList.js";
 import EpisodeList from "./components/EpisodeList.js";
+import SearchFormL from "./components/SearchFormL.js";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
       </Route>
       <Route path="/location">
         <LocationsList />
+      </Route>
+      <Route path="/search">
+        <SearchFormL />
       </Route>
       <Route path="/episode">
         <EpisodeList />

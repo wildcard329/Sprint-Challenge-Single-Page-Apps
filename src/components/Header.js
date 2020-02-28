@@ -7,8 +7,9 @@ export default function Header() {
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
       <div><Link to="/">homepage</Link></div>
       <div><Link to="/characters">characters</Link></div>
-      <div><Link to="/search">search</Link></div>
+      <div><Link to="/search">search for character</Link></div>
       <div><Link to="/location">location</Link></div>
+      <div><Link to="/search">search for location</Link></div>
       <div><Link to="/episode">episodes</Link></div>
     </header>
   );

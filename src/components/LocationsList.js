@@ -5,8 +5,9 @@ import LocationCard from './LocationCard';
 export default function LocationsList() {
     const [data, setData] = useState([]);
     useEffect(() => {
-        axios.get('https:/rickandmortyapi.com/api/location/')
+        axios.get(' https://cors-anywhere.herokuapp.com/https:/rickandmortyapi.com/api/location/')
             .then(response => {
+                console.log('location flag', response)
                 setData(response.data.results)
             })
             .catch(error => {

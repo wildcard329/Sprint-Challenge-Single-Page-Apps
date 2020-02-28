@@ -7,7 +7,7 @@ export default function CharacterList() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('https://rickandmortyapi.com/api/character/')
+    axios.get('https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/')
         .then(response => {
           console.log('flag',response.data)
           setData(response.data.results)
